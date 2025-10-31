@@ -33,7 +33,7 @@ struct PastaCard: View {
                 // Placeholder view while the model is loading
                 ProgressView()
             }
-            .frame(height: 180) // Set the display frame height
+            .frame(height: 100) // Set the display frame height
             .cornerRadius(15)
             .onAppear {
                 // Start the rotation animation
@@ -50,11 +50,6 @@ struct PastaCard: View {
                     .bold()
             }
         }
-        .background {
-            RoundedRectangle(cornerRadius: 20)
-                .fill(.regularMaterial)
-        }
-        .hoverEffect()
     }
 }
 

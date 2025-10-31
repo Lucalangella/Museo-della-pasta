@@ -16,11 +16,11 @@ struct PastaGalleryView: View {
         ScrollView {
             VStack(spacing: 30) {
                 Text("La Collezione")
-                    .font(.system(size: 36, weight: .bold))
+                    .font(.system(size: 54, weight: .bold))
                     .padding(.top, 20)
                 
                 Text("Scopri le paste tradizionali italiane")
-                    .font(.title3)
+                    .font(.system(size: 32))
                     .foregroundStyle(.secondary)
                 
                 let columns = [
@@ -45,5 +45,6 @@ struct PastaGalleryView: View {
 #Preview {
     PastaGalleryView()
 }
+
 
 
