@@ -13,11 +13,16 @@ struct MuseoDellaPastaApp: App {
         WindowGroup(id: "main") {
             ContentView()
         }
-        .windowStyle(.volumetric)
-        .defaultSize(width: 2400, height: 1800)
-        
+        .windowStyle(.automatic)
+
+        // Window for 3D pasta volume preview, opened with a String model name
         WindowGroup(id: "pastaVolume", for: String.self) { $modelName in
-            PastaVolumeView(modelName: $modelName.wrappedValue ?? "farfalle")
+            if let modelName {
+                PastaVolumeView(modelName: modelName)
+            } else {
+                // Fallback model if no value is provided
+                PastaVolumeView(modelName: "farfalle")
+            }
         }
         .windowStyle(.volumetric)
     }
