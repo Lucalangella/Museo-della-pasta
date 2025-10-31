@@ -15,7 +15,7 @@ struct PastaCard: View {
     
     var body: some View {
         VStack {
-            // MARK: - Model3D Implementation
+            // MARK: - Pasta Model3D Implementation (Rotating)
             Model3D(named: pasta.modelName, bundle: .main) { model in
                 // Success: When the model loads successfully
                 model
@@ -25,7 +25,7 @@ struct PastaCard: View {
                     // Apply rotation using the .rotation3DEffect modifier
                     .rotation3DEffect(
                         rotation,
-                        axis: (x: 0.0, y: 1.0, z: 0.0) // Rotate around the Y-axis
+                        axis: (x: 1.0, y: 1.0, z: 1.0) // Rotate around the Y-axis
                     )
                     // The RealityKit content might be large; you may need to apply a universal scale.
                     // The frame size below will help constrain it.
@@ -33,7 +33,7 @@ struct PastaCard: View {
                 // Placeholder view while the model is loading
                 ProgressView()
             }
-            .frame(height: 100) // Set the display frame height
+            .frame(height: 100) // Set the display frame height for the pasta
             .cornerRadius(15)
             .onAppear {
                 // Start the rotation animation
@@ -41,6 +41,21 @@ struct PastaCard: View {
                     rotation = .degrees(360)
                 }
             }
+            
+            // ---
+            
+            // MARK: - Mensola Model3D Implementation (Shelf/Base)
+            Model3D(named: "mensola", bundle: .main) { model in
+                model
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    // We don't apply rotation here as it should be a static base
+            } placeholder: {
+                // Placeholder for the shelf model
+                ProgressView()
+            }
+            .frame(height: 50) // Set a smaller height for the shelf/base
+            .padding(.top, -30) // Pull the shelf up closer to the pasta model
             
             // ---
             

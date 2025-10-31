@@ -13,7 +13,11 @@ struct PastaGalleryView: View {
     @Environment(\.openWindow) private var openWindow
     
     var body: some View {
-        ScrollView {
+        ZStack{
+            Image("space")
+                .resizable()
+                .scaledToFill()
+                .ignoresSafeArea()
             VStack(spacing: 30) {
                 Text("La Collezione")
                     .font(.system(size: 54, weight: .bold))
