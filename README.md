@@ -108,14 +108,22 @@ MuseoDellaPasta/
 
 ## 🚀 Installazione e Utilizzo
 
-### Requisiti di Sistema
+### 📲 Prova l'App su TestFlight
+
+**Vuoi provare l'esperienza subito?** Unisciti alla beta pubblica su TestFlight:
+
+**[Scarica su TestFlight](https://testflight.apple.com/join/kuV1v4qX)** 🎯
+
+> **Requisiti**: Apple Vision Pro con visionOS 2.0 o superiore
+
+### Requisiti di Sistema per lo Sviluppo
 
 - **Xcode 16.0** o superiore
 - **macOS Sequoia 15.0** o superiore
 - **Vision Pro Simulator** o dispositivo fisico
 - **Swift 6.2**
 
-### Installazione
+### Installazione per Sviluppatori
 
 1. **Clona il repository**
 ```bash
@@ -218,5 +226,3 @@ Consulta il file [LICENSE](LICENSE) per i dettagli completi.
 🇮🇹 🍝 ✨
 
 *Un museo che guarda al futuro senza dimenticare le sue radici*
-
-</div>
