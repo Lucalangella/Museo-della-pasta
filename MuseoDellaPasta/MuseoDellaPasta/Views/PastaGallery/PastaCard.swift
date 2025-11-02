@@ -11,60 +11,65 @@ import RealityKitContent
 
 struct PastaCard: View {
     let pasta: PastaType
-    @State private var rotation: Angle = .zero
+    @State private var angle: Angle = .degrees(0)
     
     var body: some View {
         VStack {
-            // MARK: - Pasta Model3D Implementation (Rotating)
-            Model3D(named: pasta.modelName, bundle: .main) { model in
-                // Success: When the model loads successfully
-                model
-                    // Scale and positioning adjustments
-                    .resizable() // Allows the model to be resized by the frame
-                    .aspectRatio(contentMode: .fit) // Fits the model within the frame
-                    // Apply rotation using the .rotation3DEffect modifier
-                    .rotation3DEffect(
-                        rotation,
-                        axis: (x: 1.0, y: 1.0, z: 1.0) // Rotate around the Y-axis
-                    )
-                    // The RealityKit content might be large; you may need to apply a universal scale.
-                    // The frame size below will help constrain it.
-            } placeholder: {
-                // Placeholder view while the model is loading
-                ProgressView()
-            }
-            .frame(height: 100) // Set the display frame height for the pasta
-            .cornerRadius(15)
-            .onAppear {
-                // Start the rotation animation
-                withAnimation(.linear(duration: 10).repeatForever(autoreverses: false)) {
-                    rotation = .degrees(360)
-                }
-            }
+                  Model3D(named: pasta.modelName) { model in
+                      switch model {
+                      case .empty:
+                          ProgressView()
+                          
+                      case .success(let resolvedModel3D):
+                          resolvedModel3D
+                              .resizable() // Allows the model to be resized by the frame
+                                                 .aspectRatio(contentMode: .fit) // Fits the model within the frame
+                              .scaleEffect(0.4)
+                              .rotation3DEffect(angle, axis: .x)
+                              .rotation3DEffect(angle, axis: .y)
+                              .animation(.linear(duration: 10).repeatForever(autoreverses: false), value: angle)
+                              .onAppear {
+                                  angle = .degrees(360)
+                              }
+                              
+                      case .failure(let error):
+                          Text(error.localizedDescription)
+                          
+                      @unknown default:
+                          EmptyView()
+                      }
+                  }
+                  .frame(width: 200, height: 200)
+                       .padding(16)
+                       .background {
+                           RoundedRectangle(cornerRadius: 20)
+                               .fill(.regularMaterial)
+                       }
+              
             
-            // ---
             
-            // MARK: - Mensola Model3D Implementation (Shelf/Base)
-            Model3D(named: "mensola", bundle: .main) { model in
-                model
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    // We don't apply rotation here as it should be a static base
-            } placeholder: {
-                // Placeholder for the shelf model
-                ProgressView()
-            }
-            .frame(height: 50) // Set a smaller height for the shelf/base
-            .padding(.top, -30) // Pull the shelf up closer to the pasta model
             
-            // ---
+//            // MARK: - Mensola Model3D Implementation (Shelf/Base)
+//            Model3D(named: "mensola", bundle: .main) { model in
+//                model
+//                    .resizable()
+//                    .aspectRatio(contentMode: .fit)
+//                    // We don't apply rotation here as it should be a static base
+//            } placeholder: {
+//                // Placeholder for the shelf model
+//                ProgressView()
+//            }
+//            .frame(height: 50) // Set a smaller height for the shelf/base
+//            .padding(.top, -30) // Pull the shelf up closer to the pasta model
+//
+//            // ---
             
             VStack(spacing: 5) {
                 Text(pasta.rawValue)
-                    .font(.title3)
-                    .bold()
+                    .font(.title)
             }
         }
+        
     }
 }
 

@@ -42,7 +42,7 @@ struct ContentView: View {
                                 .padding()
                         }
                         .navigationDestination(isPresented: $showPastaGallery) {
-                            PastaGalleryView()
+                            MainGalleryView()
                         }
                         .padding(.trailing, 250)
                     }

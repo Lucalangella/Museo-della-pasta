@@ -17,6 +17,10 @@ enum PastaType: String, CaseIterable, Identifiable {
     case tagliatelle = "Tagliatelle"
     case tortello = "Tortello"
     case orecchietta = "Orecchietta"
+    case conchiglia = "Conchiglia"
+    case riccioli = "Riccioli"
+    case rigatoneCurvo = "Rigatone Curvo"
+    case spaghetti = "Spaghetti"
     
     var id: String { rawValue }
     
@@ -29,6 +33,10 @@ enum PastaType: String, CaseIterable, Identifiable {
         case .tagliatelle: return "tagliatelle"
         case .tortello: return "tortello"
         case .orecchietta: return "orecchietta"
+        case .conchiglia: return "conchiglia"
+        case .riccioli: return "riccioli"
+        case .rigatoneCurvo: return "rigatone curvo"
+        case .spaghetti: return "spaghetti"
         }
     }
     
@@ -48,6 +56,14 @@ enum PastaType: String, CaseIterable, Identifiable {
             return "Pasta ripiena tradizionale del Nord Italia"
         case .orecchietta:
             return "Pasta tipica pugliese a forma di orecchio"
+        case .conchiglia:
+            return "Pasta a forma di conchiglia, perfetta per i sughi"
+        case .riccioli:
+            return "Pasta corta riccia caratteristica del Sud Italia"
+        case .rigatoneCurvo:
+            return "Pasta rigata con forma curva, ideale per sughi corposi"
+        case .spaghetti:
+            return "La pasta lunga più famosa al mondo"
         }
     }
     
@@ -67,6 +83,14 @@ enum PastaType: String, CaseIterable, Identifiable {
             return "Il tortello, variante del tortellino, è simbolo della gastronomia emiliana di antica tradizione."
         case .orecchietta:
             return "Le orecchiette sono il simbolo della cucina pugliese e risalgono al Medioevo, tradizionalmente fatte in casa."
+        case .conchiglia:
+            return "Le conchiglie, con la loro forma concava, sono nate nel Sud Italia e sono perfette per trattenere sughi e condimenti."
+        case .riccioli:
+            return "I riccioli sono una pasta tipica del Sud Italia, caratterizzata dalla forma riccia che cattura perfettamente i sughi."
+        case .rigatoneCurvo:
+            return "Il rigatone curvo è una variante del rigatone tradizionale, con una forma arcuata che lo rende unico."
+        case .spaghetti:
+            return "Gli spaghetti sono la pasta italiana più iconica e conosciuta al mondo, originari di Napoli, diventati simbolo della cucina italiana nel globo."
         }
     }
 }
