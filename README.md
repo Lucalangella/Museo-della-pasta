@@ -1,6 +1,7 @@
 # 🍝 Museo della Pasta Italiana - VisionOS
 
 > Un viaggio immersivo nella tradizione culinaria italiana attraverso la tecnologia spatial computing
+<img width="1280" height="828" alt="Screenshot 2025-11-02 at 18 05 37" src="https://github.com/user-attachments/assets/a682a251-6c8b-49bc-9af5-887b9d98c5b5" />
 
 ---
 
