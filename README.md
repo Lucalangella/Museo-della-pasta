@@ -108,11 +108,10 @@ MuseoDellaPasta/
 
 ## 🚀 Installazione e Utilizzo
 
-### 📲 Prova l'App su TestFlight
+### 📲 Scarica l'App su App Store
 
-**Vuoi provare l'esperienza subito?** Unisciti alla beta pubblica su TestFlight:
-
-**[Scarica su TestFlight](https://testflight.apple.com/join/kuV1v4qX)** 🎯
+**Vuoi provare l'esperienza subito? Scarica l'applicazione completa per Apple Vision Pro:
+**[Scarica su AppStore](https://apps.apple.com/us/app/pastapp-museo-della-pasta/id6754823065)** 🎯
 
 > **Requisiti**: Apple Vision Pro con visionOS 2.0 o superiore
 
