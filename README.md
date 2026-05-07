@@ -1,17 +1,32 @@
 # 🍝 Museo della Pasta Italiana - VisionOS
 
 > Un viaggio immersivo nella tradizione culinaria italiana attraverso la tecnologia spatial computing
+
 <img width="1280" height="828" alt="Screenshot 2025-11-02 at 18 05 37" src="https://github.com/user-attachments/assets/a682a251-6c8b-49bc-9af5-887b9d98c5b5" />
 
 ---
 
-## 📖 Descrizione del Progetto
+## 🏆 Riconoscimenti
+
+**🥉 Terzo classificato — Premio del Museo, 25ª edizione · Sezione Università**
+
+Il progetto **PastApp** ha conquistato il terzo posto nella Sezione Università della 25ª edizione del **Premio del Museo**, concorso promosso dalla **Fondazione Vincenzo Agnesi** e dedicato alla progettazione di un nuovo museo della pasta.
+
+La cerimonia di premiazione si è svolta il **31 marzo 2026** nell'ambito di [Pastaria Fiera & Festival 2026](https://www.linkedin.com/posts/fondazionevincenzoagnesi_fondazionevincenzoagnesi-pastaria-pastariafestival-activity-7445105304050065408-rn72?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD4bNrkB0-_SSrsmuGjEaBiJNKwcdeWGXUU) a Firenze, evento di riferimento per l'intera filiera della pasta, alla presenza di una giuria qualificata composta da esperti di sociologia, cultura, comunicazione e progettazione museale.
+
+Il bando ha raccolto contributi da diverse università italiane, con proposte che spaziano dalla ricerca storico-umanistica alla progettazione architettonica, fino alle soluzioni digitali e di comunicazione innovativa.
+
+> *Università degli Studi di Napoli Federico II — Luca Langella, Paola Campanile, Manuele Esposito*
+
+---
+
+## Descrizione del Progetto
 
 **Museo della Pasta Italiana** è un'applicazione nativa per Apple Vision Pro che propone una nuova esperienza museale immersiva dedicata alla pasta italiana.
 
 L'applicazione trasforma la storia millenaria della pasta in un'esperienza spaziale interattiva, dove tradizione e innovazione tecnologica si incontrano per valorizzare uno dei simboli più rappresentativi della cultura italiana.
 
-### 👥 Team di Sviluppo
+### Team di Sviluppo
 
 - **Luca Langella** - Sviluppo e Implementazione
 - **Paola Campanile** - Design
@@ -52,7 +67,7 @@ Scopri gli strumenti tradizionali che hanno plasmato la cultura della pasta:
 - **Mattarello** - Simbolo della tradizione familiare
 - **Torchietto** - Per modellare paste tipiche regionali
 
-### 🎯 Esperienza Immersiva
+### Esperienza Immersiva
 
 - **Visualizzazione Volumetrica**: I modelli 3D fluttuano nello spazio circostante
 - **Interazione Naturale**: Manipola, ruota e esplora ogni oggetto con gesti intuitivi
@@ -61,7 +76,7 @@ Scopri gli strumenti tradizionali che hanno plasmato la cultura della pasta:
 
 ---
 
-## 🏗️ Architettura Tecnica
+## Architettura Tecnica
 
 ### Stack Tecnologico
 
@@ -106,11 +121,11 @@ MuseoDellaPasta/
 
 ---
 
-## 🚀 Installazione e Utilizzo
+## Installazione e Utilizzo
 
-### 📲 Scarica l'App su App Store
+### Scarica l'App su App Store
 
-**Vuoi provare l'esperienza subito? Scarica l'applicazione completa per Apple Vision Pro:
+**Vuoi provare l'esperienza subito? Scarica l'applicazione completa per Apple Vision Pro:**
 **[Scarica su AppStore](https://apps.apple.com/us/app/pastapp-museo-della-pasta/id6754823065)** 🎯
 
 > **Requisiti**: Apple Vision Pro con visionOS 2.0 o superiore
@@ -171,7 +186,7 @@ open MuseoDellaPasta.xcodeproj
 
 ---
 
-## 🎯 Obiettivi del Progetto
+## Obiettivi del Progetto
 
 ### Valorizzazione Culturale
 
@@ -189,24 +204,15 @@ Il progetto propone un modello museale innovativo che:
 
 ---
 
-## 📊 Innovazione Tecnologica
+## Innovazione Tecnologica
 
 ### Spatial Computing
 
 L'applicazione sfrutta appieno le capacità del Vision Pro:
-- **Rendering 3D Real-time**: Modelli ad alta fedeltà con luci dinamiche
+- **Rendering 3D Real-time**: Modelli ad alta fedeltà
 - **Interazione Naturale**: Controlli gestuali intuitivi
 - **Presenza Spaziale**: Gli oggetti coesistono con l'ambiente fisico
 - **Window Management**: Finestre multiple per esperienze contestuali
-
-### Future Implementazioni
-
-- 🔄 **Animazioni Procedurali**: Simulazione della produzione della pasta
-- 🌍 **Localizzazione**: Supporto multilingua per visitatori internazionali
-- 📱 **Companion App iOS**: Esperienza complementare su iPhone/iPad
-- 🎮 **Gamification**: Quiz educativi e sfide interattive
-- 🔊 **Audio Spaziale**: Narrazioni immersive e atmosfere ambientali
-- 📊 **Analytics**: Tracciamento del percorso museale e interessi
 
 ---
 
